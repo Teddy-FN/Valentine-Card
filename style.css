@@ -53,6 +53,7 @@ body {
   width: 90%;
   height: 100%;
   margin: auto;
+  position: relative;
 }
 
 .card .textContainer h1.header {
@@ -211,21 +212,60 @@ body {
   /* left: calc(50% - 50px); */
 }
 
-.btnWrapper h2 {
-  text-align: center;
-  width: 100%;
-  font-size: 1rem;
-  color: var(--text);
+.btnWrapper {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.btnWrapper h2 {
+  text-align: center;
+  width: 100%;
+  font-size: 0.8rem;
+  color: #ff0000;
+  align-items: center;
   gap: 10px;
+  /* background-color: red; */
+  width: fit-content;
+  display: flex;
+  padding: 2px 8px;
+  border-radius: 50px;
+  border: 2px solid var(--border-color);
 
   /*  */
   animation: text-shadow 1.5s ease-in-out infinite;
   font-weight: 900;
   line-height: 1;
   z-index: 1;
+}
+
+.scroll {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.scroll h2 {
+  font-size: 0.8rem;
+  color: #ff0000;
+  align-items: center;
+
+  position: absolute;
+  bottom: 0;
+  background-color: #fff;
+  text-align: center;
+  /* width: 100%; */
+
+  animation: text-shadow 1.5s ease-in-out infinite;
+  font-weight: 900;
+  line-height: 1;
+
+  width: fit-content;
+  /* display: flex; */
+  padding: 2px 8px;
+  border-radius: 50px;
+  border: 2px solid var(--border-color);
+  /* z-index: 1; */
 }
 
 p.date {
