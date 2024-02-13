@@ -3,7 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Happy Valentine's Day 🐼</title>
+    
+
+    <script language='JavaScript'>
+      var txt="Happy Valentine's Day 🐼";
+      var speed=300;
+      var refresh=null;
+      function action() { document.title=txt;
+      txt = txt.substring(1,txt.length)+txt.charAt(0);
+      refresh=setTimeout("action()",speed);}action();
+    </script>
+
     <link rel="icon" href=
     "https://static.vecteezy.com/system/resources/previews/020/955/957/original/cute-panda-panda-illustration-animal-cute-animal-animal-illustration-png.png"
               type="image/x-icon">
